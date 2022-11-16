@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title>BPMCDONELL Portfolio</title>
 </head>
 <body>
-    <header>
-        <h2>Portfolio</h2>
-        <p>Welcome to my portfolio!</p>
-        <nav>
+    <header class="headersticky">
+        <h2>BPMCDONELL</h2>
+        <nav class="navstyle">
+            <div class="navbox">
             <ul> <!-- <a> to other parts of the site -->
-                <li>Work with me</li> <!-- links to anothe page with a form?-->
-                <li>Resume</li>
-                <li></li>
-                <li></li>
+                <li><a href="#about">About Me</a></li> <!-- links to anothe page with a form?-->
+                <li> | </li>
+                <li><a href="#work">Work</a></li>
+                <li> | </li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li> | </li>
+                <li><a href="#resume">Resume</a></li>
             </ul>
+            </div>  
         </nav>
     </header>
-
+    <div class="hero-image"></div>
     <main>
         <img>
-        <article>
+        <article id ="about" class="aboutstyle">
+            <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis maxime architecto tempora fuga. Deserunt ea consectetur dolorem iste aliquam similique, quis vel corporis magni sapiente modi obcaecati, at expedita.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus minima inventore laudantium ipsa. Autem, inventore officia molestias recusandae tempore, consectetur minima consequatur beatae fugit quis asperiores minus, illo dolore.</p>
         </article>
-        <section>
+        <section id ="work">
             <ul class="grid button flex hover">
                 <li>Project 1</li>
                 <li>Project 2</li>
@@ -35,17 +46,11 @@
             </ul>
         </section>
 
-        <aside>
-            <h3>About me:</h3>
-
-
-        </aside>
-
 
     </main>
-    <footer>
-        <h4>Contact Information</h4>
-        <nav>
+    <footer class="footerstyle">
+        <h3>Contact Information</h3>
+        <nav class="footernav">
             <ul>
                 <li>phone nubmer</li>
                 <li>github</li>

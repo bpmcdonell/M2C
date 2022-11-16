@@ -1,0 +1,93 @@
+:root {
+    --vLightBlue: #009FFF;
+    --vWhite: #ffffff;
+    --vDarkBlue: #0e00ad;
+}
+
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    /* background-color: rgb(24,163,253); */
+    background-image: url("./bg.jpg"); /* The image used */
+    background-color: var(--vWhite); /* Used if the image is unavailable */
+    height: 2345px;
+    width: 100%;
+    margin: 0px;
+    object-fit: fill;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+
+header{
+    background-color: var(--vWhite);
+    width: 100%;
+    z-index: 9001;
+}
+
+.headersticky {
+    display: inline;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    height: 8vh;
+}
+
+.headersticky h2 {
+    float: left;
+    text-align: center;
+    margin-left: 5vw;
+}
+
+.navstyle li {
+    color: var(--vLightBlue);
+    display: inline-flex;
+    padding-inline-end: 40px;
+    flex-basis: content;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 8px;
+
+}
+
+.navstyle a:link {
+    color: var(--vLightBlue);
+    background-color: var(--vWhite);
+    transition: .2s;
+    text-decoration: none;
+}
+.navstyle a:visited {
+    color: var(--vLightBlue);
+}
+.navstyle a:hover {
+    color: var(--vWhite);
+    background-color: var(--vDarkBlue);
+}
+.navbox {
+    display: flex;
+    flex-basis: fit-content;
+    float: right;
+    width: 460px;
+}
+
+.footerstyle {
+    display: inline-flex;
+}
+
+.footernav{
+    display: flex;
+    text-align: center;
+}
+
+.aboutstyle{
+    display: flex;
+    flex-flow: column wrap;
+    height: 40vh;
+    width: 30vw;
+    position: absolute;
+    top: 250px;
+    right: 75px;
+}
+.aboutstyle h2 {
+    justify-content: center;
+}
