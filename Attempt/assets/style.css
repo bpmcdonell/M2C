@@ -2,6 +2,8 @@
     --vLightBlue: #009FFF;
     --vWhite: #ffffff;
     --vDarkBlue: #0e00ad;
+    --vMedBlue: #0064bb;
+    --vGrey: rgb(93, 93, 93);
 }
 
 #background {
@@ -80,7 +82,7 @@ header{
     height: 40vh;
     width: 30vw;
     position: absolute;
-    top: 30vh;
+    top: 35vh;
     right: 5vh;
 }
 .aboutstyle h2 {
@@ -88,8 +90,22 @@ header{
     display: inline-block;
     margin:0px;
 }
+.gridContainer {
+    display: flex;
+    width: 55vw;
+    height: 400px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
 
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 
+}
 
 .footerStyle{
     display: inline-flex;
@@ -113,5 +129,32 @@ header{
     padding-top:0;
     padding-bottom: 0;
     right:0;
+}
+.projectButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 2;
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 20vh;
+    max-width: 25vw;
+    border: solid var(--vDarkBlue) 4px;
+    background-color: var(--vWhite);
+}
 
+.projectButton caption {
+    position: relative;
+    bottom: -10px;
+}
+.projectButtonImg {
+    object-fit: inherit;
+    overflow: inherit;
+    opacity: 0.9;
+    border: solid var(vGrey) 4px;
+}
+
+.projectButtonImg:hover {
+    border: solid var(--vMedBlue) 4px;
+    opacity: 1.0;
 }
