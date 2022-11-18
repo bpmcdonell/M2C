@@ -78,33 +78,56 @@ header{
 }
 .aboutstyle{
     display: flex;
-    flex-flow: column wrap;
-    height: 40vh;
+    flex-flow: column nowrap;
+    flex-basis: content;
+    height: 70vh;
     width: 30vw;
     position: absolute;
     top: 35vh;
-    right: 5vh;
+    right: 5vw;
+    
 }
 .aboutstyle h2 {
     justify-content: center;
     display: inline-block;
     margin:0px;
 }
+.imgbox{ 
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-shrink: 1;
+    height: 50%;
+    width: 80%;
+    object-fit: cover;
+    border: solid var(--vDarkBlue) 4px;
+}
 .gridContainer {
     display: flex;
+   
     width: 55vw;
-    height: 400px;
+    height: 600px;
     position: absolute;
     bottom: 100px;
     left: 50px;
-
+}
+.gridContainer h2 {
+    display: flex;
+    justify-items: center;
+}
+.gridFocus{
+    display: block;
+    gap: 20px;
+    position: relative;
+    top: 75px;
 }
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
-
+    gap: 1vw;
+    position: relative;
+    bottom: 0;
 }
 
 .footerStyle{
@@ -113,23 +136,25 @@ header{
     bottom: 0;
     width: 100%;
 }
-.footernav ul {
-    display: block;
-    height: 7vh;
-    width: 80%;
-    right:0;
+
+.footerBox{
+    display: flex;
+    flex-basis: auto;
+    justify-content:space-around;
+    flex-wrap:nowrap;
+    align-content: center;
+    gap:20vw;
+
 }
-.footernav li {
+.footernav li{
     display: inline-flex;
-    padding-inline-end: 40px;
-    flex-basis: content;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 8px;
-    padding-top:0;
-    padding-bottom: 0;
-    right:0;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+    align-content: center;
+    gap:20vw;
+
 }
+
 .projectButton {
     display: flex;
     justify-content: center;
@@ -137,24 +162,44 @@ header{
     flex-shrink: 2;
     overflow: hidden;
     object-fit: cover;
-    max-height: 20vh;
-    max-width: 25vw;
+    max-height: 15vh;
+    max-width: 20vw;
     border: solid var(--vDarkBlue) 4px;
     background-color: var(--vWhite);
 }
-
-.projectButton caption {
-    position: relative;
-    bottom: -10px;
+.projectButtonFocus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 2;
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 15vh;
+    max-width: 41.5vw;
+    border: solid var(--vDarkBlue) 4px;
+    background-color: var(--vWhite);
+    margin-bottom: 1vw;
 }
+
+.projectButtonCaption {
+    position: absolute;
+    font-weight: bolder;
+}
+
 .projectButtonImg {
     object-fit: inherit;
     overflow: inherit;
-    opacity: 0.9;
+    opacity: 0.5;
+    filter: blur(5px);
     border: solid var(vGrey) 4px;
 }
 
 .projectButtonImg:hover {
     border: solid var(--vMedBlue) 4px;
     opacity: 1.0;
+    filter:blur(0)
+}
+.projectButtonImg:hover #test {
+    visibility: hidden;
+    
 }
